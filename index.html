@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Frontend-разработчик: Верзаков Денис" />
+  <meta name="description" content="Студика" />
+  <meta name="keywords" content="..." />
+  <meta name="copyright" content="©" />
+  <meta name="theme-color" content="#111111" />
+  <meta name="apple-mobile-web-app-title" content="Студика" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="address=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <title>Студика</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png" />
+  <link rel="manifest" href="icon/site.webmanifest" />
+  <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon" />
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer type="module" src="js/UserRegion.js"></script>
+  <script defer type="module" src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <button class="burger" aria-label="Открыть меню" aria-expanded="false">
+            <span class="burger__line"></span>
+          </button>
+          <a class="logo" href="#">
+            <img src="img/logo.svg" width="88" height="24" alt="Логотип Студика" />
+          </a>
+          <button class="custom-select btn-reset" aria-label="Выбрать регион">
+            <div class="custom-select__top">
+              <span class="custom-select__icon"></span>
+              <span class="custom-select__text">Любой город</span>
+            </div>
+            <div class="custom-select__dropdown dropdown">
+              <div class="dropdown__top">
+                <div class="dropdown__search">
+                  <svg class="dropdown__search-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
+                      fill="#A7A7A7" />
+                  </svg>
+                  <input class="dropdown__input" type="text" placeholder="Регион, город, населенный пункт" />
+                </div>
+                <div class="lds-ellipsis">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="dropdown__selected">
+                  <div class="dropdown__selected-city" role="button">
+                    Москва
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
+                        fill="white" />
+                    </svg>
+                  </div>
+                  <div class="dropdown__selected-city" role="button">
+                    Пермь
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
+                        fill="white" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <ul class="dropdown__list list-reset">
+                <li class="dropdown__item">Москва</li>
+                <li class="dropdown__item">Вся Россия</li>
+                <li class="dropdown__item">Новгород</li>
+                <li class="dropdown__item">Новгород</li>
+                <li class="dropdown__item">Новгород</li>
+                <li class="dropdown__item">Новгород</li>
+                <li class="dropdown__item">Новгород</li>
+                <li class="dropdown__item">Новгород</li>
+                <li class="dropdown__item">Новгород</li>
+                <li class="dropdown__item">Новгород</li>
+              </ul>
+              <div class="dropdown__save" role="button">Сохранить</div>
+            </div>
+          </button>
+          <div class="header__search search">
+            <svg class="search__icon" width="17" height="17" viewBox="0 0 17 17" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1.7 7.64999C1.7 4.3639 4.36391 1.7 7.65001 1.7C10.9361 1.7 13.6 4.3639 13.6 7.64999C13.6 9.25281 12.9662 10.7076 11.9356 11.7774C11.9063 11.7999 11.8781 11.8246 11.8513 11.8515C11.8245 11.8783 11.7998 11.9065 11.7773 11.9358C10.7075 12.9663 9.25274 13.6 7.65001 13.6C4.36391 13.6 1.7 10.9361 1.7 7.64999ZM12.4249 13.6272C11.1162 14.674 9.45622 15.3 7.65001 15.3C3.42502 15.3 0 11.875 0 7.64999C0 3.42502 3.42502 0 7.65001 0C11.875 0 15.3 3.42502 15.3 7.64999C15.3 9.4563 14.674 11.1164 13.627 12.4251L16.7509 15.549C17.0828 15.8809 17.0828 16.4191 16.7509 16.751C16.4189 17.083 15.8807 17.083 15.5488 16.751L12.4249 13.6272Z"
+                fill="#A7A7A7" />
+            </svg>
+            <input class="search__input input-reset" type="text"
+              placeholder="Учебное заведение, специальность или профессия" />
+          </div>
+          <div class="header__right">
+            <a class="header__favorites favorites" href="#">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.5 14.0125L6.4125 13.0225C2.55 9.52 0 7.21 0 4.375C0 2.065 1.815 0.25 4.125 0.25C5.43 0.25 6.6825 0.8575 7.5 1.8175C8.3175 0.8575 9.57 0.25 10.875 0.25C13.185 0.25 15 2.065 15 4.375C15 7.21 12.45 9.52 8.5875 13.03L7.5 14.0125Z"
+                  fill="#A7A7A7" />
+              </svg>
+              <span class="favorites__count">1</span>
+            </a>
+            <div class="header__user user">
+              <span class="user__name">Екатерина</span>
+              <img src="img/avatar.png" width="32" height="32" alt="Аватар пользователя" aria-hidden="true" />
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <nav class="nav" title="Главное меню">
+            <ul class="nav__list list-reset">
+              <li class="nav__item">
+                <button class="nav__btn btn-reset">Вузы</button>
+              </li>
+              <li class="nav__item">
+                <button class="nav__btn btn-reset">Колледжи</button>
+              </li>
+              <li class="nav__item">
+                <button class="nav__btn btn-reset">Техникумы</button>
+              </li>
+              <li class="nav__item">
+                <button class="nav__btn btn-reset">Училища</button>
+              </li>
+              <li class="nav__item">
+                <button class="nav__btn btn-reset">Специальности</button>
+              </li>
+              <li class="nav__item">
+                <button class="nav__btn btn-reset">Профессии</button>
+              </li>
+              <li class="nav__item">
+                <button class="nav__btn btn-reset">Отзывы</button>
+              </li>
+              <li class="nav__item">
+                <button class="nav__btn btn-reset">Учебным заведениям</button>
+              </li>
+              <li class="nav__item">
+                <button class="nav__btn btn-reset">
+                  Тест на профориентацию
+                </button>
+              </li>
+              <!-- <li class="nav__item"><button class="nav__btn btn-reset">Тест на профориентацию</button></li> -->
+              <!-- <li class="nav__item"><button class="nav__btn btn-reset">Тест на профориентацию</button></li> -->
+            </ul>
+            <button class="nav__slide-scroll btn-reset">
+              <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L1 13" stroke="#222222" stroke-linecap="round" />
+              </svg>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </div>
+</body>
+
+</html>
